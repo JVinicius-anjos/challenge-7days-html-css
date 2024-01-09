@@ -1,0 +1,201 @@
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --background-color: #FFFFFF;
+    --gray-color: #101828;
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; 
+
+}
+  
+body {
+    width: 100%;
+    height: 100vh;
+}
+  
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1440px;
+    height: 80px;
+
+    
+}
+
+.container__logo {
+    display: flex;
+    justify-content: center;
+    padding: 0px 32px;
+    
+}
+.container__logo img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    
+}
+
+.container__logo a {
+    color: #3A404E;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+
+.container__paginas a {
+    align-items: flex-start;
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.container__botoes a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 15px;
+    padding: 8px 16px;
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container__botoes a.container__botoes__cadastro {
+    text-decoration: none;
+    background-color: #8E2424;
+    color: var(--background-color);
+    border-color: #8E2424; /* Adicionando borda apenas para o botão de cadastro */
+}
+
+.container__botoes a.container__botoes__entrar {
+    text-decoration: none;
+    background-color: transparent; /* Mantendo o fundo transparente para o botão de entrar */
+}
+
+.container__botoes a:hover {
+    text-decoration: none;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:  1440px;
+    height:  407px;
+    padding: 96px, 0px, 96px, 0px;
+    margin: auto;
+   
+}
+
+.cabecalho__filho {
+    text-align: center;
+    padding: 20px;
+}
+
+.cabecalho__filho__sobre {
+    color: var(--main-color);
+    width: 78px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+
+
+.cabecalho__filho__diferença {
+    color: var(--gray-color);
+    font-weight: 600;
+    padding: 1.5rem;
+    font-size: 48px;
+    
+}
+
+.cabecalho__filho__texto {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.metricas {
+    display: flex;
+    justify-content: center;
+    margin: auto ;
+    width: 1440px;
+    height: 288px;
+    padding: 0px, 0px, 96px, 0px;
+    gap: 64px;
+
+}
+
+.metricas__campo {
+    align-items: center;
+    width:  280px;
+    height: 168px;
+}
+
+.metricas__titulo {
+    color: var(--main-color);
+    font-size: 60px;
+    font-weight: 600;
+
+}
+
+.metricas__subtitulo {
+    color: var(--gray-color);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.metricas__texto {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    height: 1798px;
+    padding: 96px, 0px, 96px, 0px;
+    gap: 30px;
+
+}
+
+.vagas__titulo {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    padding: 4px 12px 4px 12px;
+
+}
+
+.vagas__subtitulo {
+    color: var(--gray-color);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.vagas__texto {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.vagas__img {
+    padding: 2rem;
+}
