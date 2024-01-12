@@ -9,7 +9,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Inter', sans-serif; 
 
 }
@@ -25,8 +24,7 @@ nav {
     align-items: center;
     width: 1440px;
     height: 80px;
-
-    
+    margin: auto;
 }
 
 .container__logo {
@@ -166,7 +164,7 @@ nav {
 .vagas {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: auto;
     width: 1440px;
     height: 1798px;
     padding: 96px, 0px, 96px, 0px;
@@ -176,6 +174,7 @@ nav {
 
 .vagas__titulo {
     color: var(--main-color);
+    align-self: center;
     font-weight: 500;
     font-size: 14px;
     background: rgba(142, 36, 36, 0.05);
@@ -186,16 +185,178 @@ nav {
 
 .vagas__subtitulo {
     color: var(--gray-color);
+    align-self: center;
     font-size: 36px;
     font-weight: 600;
 }
 
 .vagas__texto {
+    align-self: center;
     color: var(--text-color);
     font-size: 16px;
     font-weight: 400;
 }
 
 .vagas__img {
+    align-self: center;
     padding: 2rem;
+}
+
+.vaga {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    height: 940px;
+    margin-left: 25%;
+
+}
+.categoria__vaga {
+    margin-bottom: 2rem;
+   
+    color: var(--gray-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.titulo__vaga {
+    margin-left: 5rem;
+    padding: 2rem, 2rem, 2rem, 5rem;
+    color: var(--gray-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+.informacoes {
+    padding: 2rem 0 2rem 5rem;
+    color:var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+   
+}
+
+.container__borda { 
+   
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    padding: 24px 24px 28px 24px;
+   
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.depoimentos {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    margin:auto;
+    width: 1440px;
+    height: 500px;
+    padding: 0px, 0px, 96px, 0px;
+
+}
+
+.depoimentos__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:#C3191908;
+    border-radius: 16px;
+    width: 1280px;
+    height: 404px;
+
+    
+}
+.depoimentos__titulo {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+    
+}
+.depoimentos__texto {
+    font-size: 36px;
+    font-weight: 500 ;
+    color: var(--gray-color);
+    text-align: center;
+    padding: 2rem;
+    
+}
+.depoimentos__nome {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray-color);
+    padding: 1rem 0 0.5rem 0;
+    
+}
+.depoimentos__funcao {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.depoimentos__img {
+    width: 56px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    width: 1440px;
+    height: 430px;
+    padding: 96px, 0px, 96px, 0px;
+    background-color: #f9fafb;
+}
+
+.formulario__info {
+    margin:auto;
+    width: 832px;
+    height: 182px;
+    padding: 0px, 32px, 0px, 32px;
+    gap: 32px;
+}
+
+.formulario__titulo{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+}
+
+.formulario__texto {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.formulario__caixa {
+    width: 360px;
+    height: 48px;
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    gap: 8px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+}
+.formulario__botao {
+    width: 116px;
+    height: 48px;
+    padding: 12px, 20px, 12px, 20px;
+    border-radius: 8px;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    gap: 8px;
+    color: var(--background-color);
+}
+.formulario__rodape__info {
+    width: 393px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-top: 2rem;
+    margin-left: 13rem;
 }
